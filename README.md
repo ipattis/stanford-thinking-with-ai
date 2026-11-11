@@ -24,14 +24,6 @@ Then open <http://localhost:8193>.
 
 To work on a single lab in isolation, use the dev harness, e.g. <http://localhost:8193/dev/lab-harness.html?lab=eval-arena&theme=dark>.
 
-## Deploy to GitHub Pages
-
-1. Create a GitHub repository (e.g. `thinking-with-ai`) and push this folder to its `main` branch.
-2. In the repository, go to **Settings → Pages → Build and deployment**, choose **Deploy from a branch**, and select `main` and `/ (root)`.
-3. After a minute the site will be live at `https://<your-username>.github.io/<repo-name>/`.
-
-All paths are relative and routing uses the URL hash (`#/module/...`), so the site works under any sub-path with no configuration. The empty `.nojekyll` file matters: without it, GitHub's Jekyll step would drop files starting with an underscore, including `assets/js/labs/_kit.js`.
-
 ## Project structure
 
 ```
